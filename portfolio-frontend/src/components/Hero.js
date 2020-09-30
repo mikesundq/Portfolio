@@ -3,7 +3,8 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
-// ...GatsbyImageSharpFluid
+//import elements
+import {HeroWrapper, Underline} from "../elements/HeroElements"
 
 const query = graphql`
   {
@@ -27,55 +28,22 @@ const Hero = () => {
   // console.log(data)
 
   return (
-    <header className="hero">
+    <HeroWrapper>
       <div className="section-center hero-center">
         <article className="hero-info">
           <div>
             <h1>Soy Mike</h1>
-            <div className="underline"></div>
+            <Underline/>
             <h4>Studerande på TUC yrkeshögskola</h4>
             -I’m currently working on my own Portfolio site
             <br />
-            -Tjästeledig butiksbiträde
+            -Tjästeledigt butiksbiträde
             <br />
             -Blivande systemutvecklare 
             <br />
             -Snackar lite spanska
-            {/*<br />
-            - 😄 Pronouns: Inquisitive, break the mold.. <br />- 💜{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://strapi.io/documentation/v3.x/getting-started/introduction.html"
-            >
-              Strapi
-            </a>
-            ,{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://reactjs.org/docs/getting-started.html"
-            >
-              React
-            </a>
-            ,{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.gatsbyjs.org/docs/"
-            >
-              Gatsby
-            </a>{" "}
-            ,{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://styled-components.com/docs"
-            >
-              Styled Components
-            </a> */}
             <br />
-            - kör båge
+            -Kör båge
             <br />
             -Kontakta mig genom denna länk 
             <br />
@@ -87,7 +55,7 @@ const Hero = () => {
         </article>
         <Image fluid={fluid} className="hero-img" />
       </div>
-    </header>
+    </HeroWrapper>
   )
 }
 export default Hero

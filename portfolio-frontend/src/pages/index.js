@@ -7,19 +7,19 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 
-export default ({data}) => {
+export default ({ data }) => {
 
   const {
     allStrapiProjects: { nodes: projects },
   } = data
 
-  return  (
-  <Layout>
-    <Hero/>
-    <Services/>
-    <Jobs/>
-    <Projects  projects={projects} title="projekt i fokus" showLink />
-  </Layout>
+  return (
+    <Layout>
+      <Hero />
+      <Services />
+      <Jobs />
+      <Projects projects={projects} title="projekt i fokus" showLink />
+    </Layout>
   )
 }
 // ...GatsbyImageSharpFluid
