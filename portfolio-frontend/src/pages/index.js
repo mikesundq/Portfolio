@@ -8,17 +8,17 @@ import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 
 export default ({ data }) => {
-
   const {
     allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data
-
   return (
     <Layout>
       <Hero />
       <Services />
       <Jobs />
       <Projects projects={projects} title="projekt i fokus" showLink />
+      <Blogs blogs={blogs} title="Senaste artiklar" showLink />
     </Layout>
   )
 }
@@ -26,25 +26,44 @@ export default ({ data }) => {
 
 
 export const query = graphql`
-{
-  allStrapiProjects(filter: {featured: {eq: true}}) {
-    nodes {
-      id
-      title
-      github
-      url
-      image {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+  {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
+      nodes {
+        github
+        id
+        description
+        title
+        url
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        stack {
+          id
+          title
+        }
+      }
+    }
+    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
+      nodes {
+        slug
+        content
+        desc
+        date(locale: "sv", formatString: "DD MMM YYYY")
+        id
+        title
+        category
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
-      stack {
-        id
-        title
-      }
     }
   }
-}
 `
