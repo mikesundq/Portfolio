@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+      "cloud_name": "mikealot",
+      "api_key": "771435239992519",
+      "api_secret": "TTxMUSae4cVrLgCDt8rPITF3uGM"
+    }
+  }
