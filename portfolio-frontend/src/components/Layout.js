@@ -7,13 +7,18 @@ import Footer from "./Footer"
 import LayoutWrapper from "../elements/LayoutElements"
 
 const Layout = ({ children }) => {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <LayoutWrapper>
-      <Navbar/>
-      
+    <>
+      <Navbar toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       {children}
-      <Footer/>
-    </LayoutWrapper>
+      <Footer />
+    </>
   )
 }
 
