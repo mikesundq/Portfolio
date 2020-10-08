@@ -6,6 +6,7 @@ import Image from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import downloadFile from "../../static/MittCV.pdf"
 import { Link } from "gatsby"
+import SEO from "../components/SEO"
 // ...GatsbyImageSharpFluid
 
 const About = ({
@@ -17,6 +18,7 @@ const About = ({
     const { info, stack, title, image } = nodes[0]
     return (
         <Layout>
+            <SEO title="CV" description="Mike CV" />
             <section className="about-page">
                 <div className="section-center about-center">
                     <Image
