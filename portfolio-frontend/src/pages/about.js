@@ -8,53 +8,58 @@ import downloadFile from "../../static/MittCV.pdf"
 import { Link } from "gatsby"
 // ...GatsbyImageSharpFluid
 
-const About = ({ data }) => {
-    //console.log(data)
-
-    const { info, stack, title, image } = data.allStrapiAbout.nodes[0]
-
-    console.log(image.childImageSharp.fluid)
-
-    // return (
-    //   <h1>about page</h1>
-    // )
+const About = ({
+    data: {
+        about: { nodes },
+    },
+}) => {
+    //console.log(nodes)
+    const { info, stack, title, image } = nodes[0]
     return (
         <Layout>
-            <div className="section-center about-center">
-                <image
-                    fluid={image.childImageSharp.fluid}
-                    className="about-img"
-                />
-                <ReactMarkdown source={info} />
-                <div className="about-stack">
-                    {stack.map(item => {
-                        return <span key={item.id}>{item.title}</span>
-                    })}
+            <section className="about-page">
+                <div className="section-center about-center">
+                    <Image
+                        fluid={image.childImageSharp.fluid}
+                        className="about-img"
+                    />
+                    <article className="about-text">
+                        {/* <Title title={title} />
+                  <p>{info}</p> */}
+                        <ReactMarkdown source={info} />
+                        <div className="about-stack">
+                            {stack.map(item => {
+                                return <span key={item.id}>{item.title}</span>
+                            })}
+                        </div>
+
+                        <div className="btn cv">
+                            <a href={downloadFile} download>
+                                Ladda ner fullständig CV
+                            </a>
+                            {` `}
+                        </div>
+                        <Link to="/contact" className="btn">
+                            kontakta mig
+                        </Link>
+                    </article>
                 </div>
-                <div className="btn cv">
-                    <a href={downloadFile} download>
-                        Ladda ner fullständigt CV
-                    </a>
-                    {/* {``} */}
-                </div>
-                <Link to="/contact" className="btn">
-                    kontakta mig
-                </Link>
-            </div>
+                <></>
+            </section>
         </Layout>
     )
 }
 
 export const query = graphql`
     {
-        allStrapiAbout {
+        about: allStrapiAbout {
             nodes {
+                stack {
+                    id
+                    title
+                }
                 title
                 info
-                stack {
-                    title
-                    id
-                }
                 image {
                     childImageSharp {
                         fluid {
