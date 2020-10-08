@@ -8,7 +8,7 @@ import {HeroWrapper, Underline} from "../elements/HeroElements"
 
 const query = graphql`
   {
-    file(relativePath: { eq: "hero-img.png" }) {
+    file(relativePath: { eq: "mike.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
