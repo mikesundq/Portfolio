@@ -9,7 +9,7 @@ export const LogoImg = styled.img`
     margin-bottom: 0.375rem;
 
 `
-//navwrapper
+//NavWrapper
 export const NavbarWrapper = styled.nav`
     position: absolute;
     top: 0;
@@ -25,14 +25,19 @@ export const NavbarWrapper = styled.nav`
     background: transparent;
     }
 `
-//navcenter
+//NavCenter
 export const NavCenter = styled.div`
     width: 90vw;
     max-width: 1170px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
+    
+    
+    @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+    
 `
 
 //navheader
@@ -42,7 +47,7 @@ export const NavHeader = styled.div`
     align-items: center;
 `
 
-// toggelbutton
+// ToggelButton
 export const ToggleButton = styled.button`
     
     font-size: 2rem;
@@ -62,21 +67,32 @@ export const ToggleButton = styled.button`
 
 `
 
-// .toggle-btn {
-//     font-size: 2rem;
-//     background: transparent;
-//     border-color: transparent;
-//     color: var(--clr-primary-5);
-//     cursor: pointer;
-//     transition: var(--transition);
-//   }
-//   .toggle-btn:hover {
-//     color: var(--clr-primary-2);
-//   }
-//   .nav-links {
-//     display: none;
-//   }
-//   @media screen and (min-width: 768px) {
-//     .toggle-btn {
-//       display: none;
-//     }
+// NavLinks
+export const NavLinks = styled.ul`
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-right: 2rem;
+        }
+
+        a {
+            text-transform: capitalize;
+            color: ${props => props.theme.color.grey1};
+            font-weight: bold;
+            letter-spacing: ${props => props.theme.spacing};
+            transition: ${props => props.theme.transition};
+            padding: 0.5rem 0;
+        }
+
+        a:hover {
+            color: ${props => props.theme.color.primary5};
+            box-shadow: 0px 2px ${props => props.theme.color.primary5};
+        }
+    }
+
+`

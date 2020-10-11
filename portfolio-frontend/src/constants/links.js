@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { NavLinks,  SidebarLinks } from "../elements"
+
 const data = [
   {
     id: 1,
@@ -35,8 +37,20 @@ const tempLinks = data.map(link => {
     </li>
   )
 })
-// I KNOW WE CAN COMBINE IT !!!!!
 
+
+
+//using useState prop if sidebar is open 
+export default ({ isOpen }) => {
+  return (
+    <>
+      {isOpen ? <SidebarLinks>{tempLinks}</SidebarLinks> : <NavLinks>{tempLinks}</NavLinks>}
+    </>
+  )
+}
+
+
+/*
 export default ({ styleClass }) => {
   return (
     <ul className={`page-links ${styleClass ? styleClass : ""}`}>
@@ -44,3 +58,4 @@ export default ({ styleClass }) => {
     </ul>
   )
 }
+*/
