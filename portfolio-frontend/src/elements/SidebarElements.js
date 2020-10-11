@@ -17,10 +17,10 @@ const slideRight = css`
 `
 
 export const SidebarLinks = styled.ul`
-/* 
+
     li {
         opacity: 0;
-    } */
+    }
 
     li a {
         display: block;
