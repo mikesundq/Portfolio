@@ -1,10 +1,18 @@
 import React from "react"
-import Image from "gatsby-image"
-import { Link } from "gatsby"
+//import Image from "gatsby-image"
+//import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 //import elements
-import {HeroWrapper, Underline} from "../elements"
+import {
+  HeroWrapper,
+  HeroUnderline,
+  HeroCenter,
+  HeroInfo,
+  HeroImage,
+  ContactButton,
+} from "../elements"
+
 
 const query = graphql`
   {
@@ -29,11 +37,11 @@ const Hero = () => {
 
   return (
     <HeroWrapper>
-      <div className="section-center hero-center">
-        <article className="hero-info">
+      <HeroCenter>
+        <HeroInfo>
           <div>
             <h1>Soy Mike</h1>
-            <Underline/>
+            <HeroUnderline/>
             <h4>Studerande på TUC yrkeshögskola</h4>
             -I’m currently working on my own Portfolio site
             <br />
@@ -47,14 +55,14 @@ const Hero = () => {
             <br />
             -Kontakta mig genom denna länk 
             <br />
-            <Link to="/contact" className="btn">
+            <ContactButton to="/contact">
               kontakta mig
-            </Link>
+            </ContactButton>
             <SocialLinks />
           </div>
-        </article>
-        <Image fluid={fluid} className="hero-img" />
-      </div>
+        </HeroInfo>
+        <HeroImage fluid={fluid} />
+      </HeroCenter>
     </HeroWrapper>
   )
 }

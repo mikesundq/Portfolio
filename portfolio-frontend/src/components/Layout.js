@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
 //import elements probebly not needed..
-import LayoutWrapper from "../elements/LayoutElements"
+//import LayoutWrapper from "../elements/LayoutElements"
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false)
