@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 //import elements
-import {HeroWrapper, Underline} from "../elements/HeroElements"
+import {HeroWrapper, Underline} from "../elements"
 
 const query = graphql`
   {
