@@ -6,6 +6,7 @@ import SEO from "../components/SEO"
 const Error = () => {
   return (
     <Layout>
+      <SEO title="CV" description="Mike CV" />
       <main className="error-page">
         <div className="error-container">
           <h1>Oj, Något gick fel</h1>
