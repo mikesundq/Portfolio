@@ -54,6 +54,7 @@ const Jobs = () => {
                 key={item.strapiId}
                 onClick={() => setValue(index)}
                 className={`job-btn ${index === value && "active-btn"}`}
+                isActive={index === value ? "true" : "false"}
               >
                 {item.company}
               </button>
