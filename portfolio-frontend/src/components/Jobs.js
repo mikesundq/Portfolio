@@ -3,6 +3,11 @@ import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
+import { 
+  JobsWrapper,
+  JobsCenter,
+  ButtonContainer,
+} from "../elements"
 
 const query = graphql`
 {
@@ -38,11 +43,11 @@ const Jobs = () => {
 
   
   return (
-    <section className="section jobs">
+    <JobsWrapper>
       <Title title="erfarenhet" />
-      <div className="jobs-center">
+      <JobsCenter>
         {/* btn container */}
-        <div className="btn-container">
+        <ButtonContainer>
           {jobs.map((item, index) => {
             return (
               <button
@@ -54,7 +59,7 @@ const Jobs = () => {
               </button>
             )
           })}
-        </div>
+        </ButtonContainer>
         {/* job info */}
         <article className="job-info">
           <h3>{position}</h3>
@@ -69,11 +74,11 @@ const Jobs = () => {
             )
           })}
         </article>
-      </div>
+      </JobsCenter>
       <Link to="/about" className="btn center-btn">
         Mitt CV
       </Link>
-    </section>
+    </JobsWrapper>
   )
 }
 
