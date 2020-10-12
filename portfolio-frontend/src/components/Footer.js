@@ -1,16 +1,20 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
+import {
+  FooterWrap,
+} from "../elements"
+
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <SocialLinks styleClass="footer-links"></SocialLinks>
+    <FooterWrap>
+      <div>
+        <SocialLinks styleClass="footer-links" linksStyle="footer"></SocialLinks>
         <h4>
           copyright&copy; {new Date().getFullYear()} | &nbsp;
           <span>Mike Portfolio</span> | all rights reserved
         </h4>
       </div>
-    </footer>
+    </FooterWrap>
   )
 }
 

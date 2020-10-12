@@ -58,7 +58,7 @@ const Hero = () => {
             <ContactButton to="/contact">
               kontakta mig
             </ContactButton>
-            <SocialLinks />
+            <SocialLinks linksStyle="hero"/>
           </div>
         </HeroInfo>
         <HeroImage fluid={fluid} />

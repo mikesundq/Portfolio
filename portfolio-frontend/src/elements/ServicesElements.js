@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const ServicesSection = styled.section`
-
     background: ${props => props.theme.color.grey10};
     padding: 5rem 0;
 `
@@ -13,13 +12,12 @@ export const ServicesCenter = styled.div`
 
     @media screen and (min-width: 992px) {
         width: 95vw;
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
     @media screen and (min-width: 676px){
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         -webkit-column-gap: 2rem;
         -moz-column-gap: 2rem;
         column-gap: 2rem;

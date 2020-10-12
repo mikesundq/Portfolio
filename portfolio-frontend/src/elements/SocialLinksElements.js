@@ -1,7 +1,21 @@
 import styled from "styled-components"
 
 export const SocialLinksWrap = styled.ul`
-    margin-top: 2rem;
+    
+    margin: ${props => {
+        switch (props.linksStyle){
+            case "footer":
+                return "0 auto 1rem auto"
+            case "hero":
+                return "2rem 0 0 0"
+            default:
+                return "2rem 0 0 0"
+        }
+    }};
+    
+    
+    
+    //margin-top: 2rem;
     width: 15rem;
     display: flex;
     justify-content: space-between;

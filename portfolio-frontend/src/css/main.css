@@ -48,12 +48,14 @@ Variables
   --max-width: 1170px;
   --fixed-width: 700px;
 }
+
+
 /*
 =============== 
 Global Styles
 ===============
 */
-
+/*
 *,
 ::after,
 ::before {
@@ -125,6 +127,8 @@ p {
     line-height: 1;
   }
 }
+
+*/
 /*  global classes */
 
 .btn {
@@ -207,7 +211,7 @@ p {
 Navbar
 ===============
 */
-
+/*
 .navbar {
   position: absolute;
   top: 0;
@@ -281,11 +285,15 @@ Navbar
     background: transparent;
   }
 }
+
+*/
 /*
+
 =============== 
 Sidebar
 ===============
 */
+/*
 .sidebar {
   background: var(--clr-grey-10);
   position: fixed;
@@ -304,6 +312,9 @@ Sidebar
   opacity: 1;
   transform: translateX(0);
 }
+/*
+*/
+/*
 .sidebar-links li {
   opacity: 0;
 }
@@ -322,6 +333,9 @@ Sidebar
   background: var(--clr-primary-9);
   color: var(--clr-primary-5);
 }
+*/
+/*
+
 .close-btn {
   position: absolute;
   right: 4.75%;
@@ -337,11 +351,14 @@ Sidebar
     transform: translateX(-100%);
   }
 }
+*/
 /*
 =============== 
 Sidebar Animation
 ===============
 */
+
+/*
 .sidebar-links li {
   animation: slideRight 0.5s ease-in-out 0.3s forwards;
 }
@@ -370,6 +387,9 @@ Sidebar Animation
     opacity: 1;
   }
 }
+
+
+
 .sidebar-icons li {
   opacity: 0;
   animation: slideUp 0.5s ease-in-out 0.3s forwards;
@@ -399,13 +419,14 @@ Sidebar Animation
     opacity: 1;
   }
 }
-
+*/
 /*
 =============== 
 Hero
 ===============
 */
 /* underline added to globals */
+/*
 .hero {
   margin-top: -5rem;
   padding-top: 5rem;
@@ -480,12 +501,13 @@ Hero
     line-height: 1;
   }
 }
-
+*/
 /*
 =============== 
 Services
 ===============
 */
+/*
 .service {
   background: var(--clr-white);
   padding: 3rem 1.5rem;
@@ -533,7 +555,7 @@ Services
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
+*/
 /*
 =============== 
 Jobs
@@ -826,6 +848,7 @@ Blog
 Footer
 ===============
 */
+/*
 .footer {
   height: 9rem;
   background: #222;
@@ -851,6 +874,8 @@ Footer
 .footer .social-link:hover {
   color: var(--clr-primary-5);
 }
+
+*/
 /*
 ===============
 Pages

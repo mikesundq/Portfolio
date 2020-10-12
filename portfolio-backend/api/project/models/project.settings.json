@@ -30,7 +30,8 @@
     },
     "github": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "mikegit"
     },
     "url": {
       "type": "string",

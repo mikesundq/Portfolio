@@ -6,6 +6,7 @@ import {
   FaBehanceSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
+import { SocialLinksWrap } from "../elements"
 
 const data = [
   {
@@ -44,8 +45,16 @@ const links = data.map(link => {
   )
 })
 
+export default ({ linksStyle }) => {
+  return (
+    <SocialLinksWrap linksStyle={linksStyle} >{links}</SocialLinksWrap>
+  )
+}
+
+/*
 export default ({ styleClass }) => {
   return (
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
   )
 }
+*/

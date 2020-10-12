@@ -1,6 +1,6 @@
 import styled, { keyframes, css } from "styled-components"
 
-//must work on this!!!
+
 const fadeIn = keyframes`
     0% {
             transform: translateX(-200px);
@@ -38,13 +38,6 @@ export const SidebarLinks = styled.ul`
         background: ${props => props.theme.color.primary9};
         color: ${props => props.theme.color.primary5};
     }
-
-    /* sidebar links animations */
-
-    /* li {
-        animation: ${slideRight} 0.5s ease-in-out 0.3s forwards;
-    } */
-
     
     li {
         ${slideRight};
@@ -66,16 +59,37 @@ export const SidebarLinks = styled.ul`
     li:nth-of-type(5) {
         animation-delay: 1.25s;
     }
+`
 
-    /* @keyframes slideRight {
-        0% {
-            transform: translateX(-200px);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    } */
+export const SidebarWrap = styled.aside`
+    background: ${props => props.theme.color.grey10};
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    opacity: ${({ isOpen }) => isOpen ? "1" : "0"};
+    //opacity: 0;
+    transition:  ${props => props.theme.transition};
+    transform: ${({ isOpen }) => isOpen ? "translateX(0)" : "translateX(-100%)"};
+    //transform: translateX(0);
+    //transform: translateX(-100%);
 
+    @media screen and (min-width: 992px) {
+        transform: translateX(-100%);
+    }
+
+    button {
+        position: absolute;
+        right: 4.75%;
+        top: 2.75%;
+        font-size: 2.5rem;
+        background: transparent;
+        border-color: transparent;
+        color: ${props => props.theme.color.redDark};
+        cursor: pointer;
+    }
 `
