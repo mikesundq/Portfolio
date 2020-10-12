@@ -45,11 +45,11 @@ export const SidebarLinks = styled.ul`
         animation: ${slideRight} 0.5s ease-in-out 0.3s forwards;
     } */
 
-    /*
+    
     li {
         ${slideRight};
     }
-    */
+    
 
     li:nth-of-type(1) {
         animation-delay: 0.25s;

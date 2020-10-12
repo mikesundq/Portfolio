@@ -4,7 +4,7 @@ import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 import {LogoImg, NavbarWrapper, NavCenter, NavHeader, ToggleButton} from "../elements"
 
-const Navbar = ({ toggleSidebar }) => {
+const Navbar = ({ toggleSidebar, isOpen }) => {
   return (
     <NavbarWrapper>
       <NavCenter>
@@ -14,7 +14,7 @@ const Navbar = ({ toggleSidebar }) => {
             <FaAlignRight></FaAlignRight>
           </ToggleButton>
         </NavHeader>
-          <PageLinks styleClass="nav-links"></PageLinks>
+          <PageLinks sidebar={isOpen}></PageLinks>
       </NavCenter>
     </NavbarWrapper>
   )

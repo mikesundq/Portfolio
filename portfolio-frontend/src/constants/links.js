@@ -30,6 +30,7 @@ const data = [
   },
 ]
 
+
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
@@ -40,11 +41,12 @@ const tempLinks = data.map(link => {
 
 
 
-//using useState prop if sidebar is open 
-export default ({ isOpen }) => {
+
+//using useState prop isOpen 
+export default ({ sidebar }) => {
   return (
     <>
-      {isOpen ? <SidebarLinks>{tempLinks}</SidebarLinks> : <NavLinks>{tempLinks}</NavLinks>}
+      {sidebar ? <SidebarLinks>{tempLinks}</SidebarLinks> : <NavLinks>{tempLinks}</NavLinks>}
     </>
   )
 }

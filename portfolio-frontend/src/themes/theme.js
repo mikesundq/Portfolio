@@ -47,5 +47,10 @@ export default {
     width: {
         max: "1170px",
         fixed: "700px"
-    }
+    },
+
+    // linksStyle: {
+    //     footer: "",
+    //     sidebar: ""
+    // }
 }
