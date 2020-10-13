@@ -19,7 +19,7 @@ export const NavbarWrapper = styled.nav`
     display: flex;
     align-items: center;
     z-index: 200;
-    background: ${props => props.theme.color.white};
+    background:  ${props => props.theme.color.white};
 
     @media screen and (min-width: 992px) {
     background: transparent;
