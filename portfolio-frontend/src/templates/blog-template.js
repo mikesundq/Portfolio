@@ -19,7 +19,7 @@ const ComponentName = ({ data }) => {
       <SEO title={title} description={desc} />
       <BlogTempletWrap>
         <BlogTempCenter>
-          <article className="blog-content">
+          <article>
             <ReactMarkdown source={content} />
           </article>
           <CenterButton to="/blog">

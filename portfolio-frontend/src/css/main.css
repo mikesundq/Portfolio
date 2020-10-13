@@ -791,6 +791,8 @@ Projects
 Blog
 ===============
 */
+
+/*
 .blog {
   display: block;
   margin-bottom: 2rem;
@@ -860,7 +862,7 @@ Blog
     height: 13.75rem;
   }
 }
-
+*/
 /*
 ===============
 Footer
@@ -923,10 +925,12 @@ Pages
 ===============
 Blog Page
 ===============
-*/
+
 .blog-page .blog {
   background: var(--clr-white);
 }
+
+*/
 /*
 ===============
 About Page
@@ -1043,6 +1047,8 @@ Contact Page
 Blog Template
 ===============
 */
+/* 
+
 .blog-template {
   padding: 5rem 0;
 }
@@ -1082,4 +1088,4 @@ Blog Template
   width: 15rem;
   height: 15rem;
   margin: 3rem 0;
-}
+} */
