@@ -16,7 +16,7 @@ import {
 
 const query = graphql`
   {
-    file(relativePath: { eq: "mike-hero.png" }) {
+    file(relativePath: { eq: "mike-hero1.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

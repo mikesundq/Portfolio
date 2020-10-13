@@ -11,7 +11,7 @@ export const HeroWrapper = styled.header`
   position: relative;
 
   @media screen and (min-width: 992px) {
-    ::before {
+    &:before {
       content: "";
       position: absolute;
       top: 0;
@@ -50,6 +50,8 @@ export const HeroCenter = styled.div`
       display: block;
       grid-row: 1/1;
       grid-column: 6/-1;
+      //max-height: 500px;
+      //max-width: auto;
     }
   }
 
@@ -74,7 +76,6 @@ export const HeroImage = styled(Image)`
 
   @media screen and (min-width: 992px) {
     display: block;
-    /* grid doesn't work with display block */
     grid-row: 1/1;
     grid-column: 6/-1;
   }
