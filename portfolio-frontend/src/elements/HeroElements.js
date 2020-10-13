@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import Image from "gatsby-image"
-
 
 //heroWrapper
 export const HeroWrapper = styled.header`
@@ -66,19 +64,6 @@ export const HeroInfo = styled.article`
     color: ${props => props.theme.color.grey5};
   }
   
-`
-
-//HeroImage
-export const HeroImage = styled(Image)`
-  
-  //hide image if screen is to small
-  display: none;
-
-  @media screen and (min-width: 992px) {
-    display: block;
-    grid-row: 1/1;
-    grid-column: 6/-1;
-  }
 `
 
 //hero underline

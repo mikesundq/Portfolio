@@ -20,7 +20,7 @@ export const ProjectWrap = styled.article`
 
 `
 
-export const ProjectImage = styled(props => <Image {...props}/>)`
+export const ProjectImage = styled(Image)`
     
     border-top-left-radius: ${props => props.theme.radius};
     border-top-right-radius: ${props => props.theme.radius};
@@ -51,8 +51,8 @@ export const ProjectImage = styled(props => <Image {...props}/>)`
         grid-column: 1 / span 8;
         grid-row: 1 / 1;
         height: 30rem;
-        border-radius: var(--radius);
-        box-shadow: var(--dark-shadow);
+        border-radius: ${props => props.theme.radius};
+        box-shadow: ${props => props.theme.shadows.dark};
     }
 
 `
