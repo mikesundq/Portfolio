@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+import { BlogPageWrapper } from "../elements"
+
 // ...GatsbyImageSharpFluid
 
 const Blog = ({
@@ -13,9 +15,9 @@ const Blog = ({
   return (
     <Layout>
        <SEO title="CV" description="Mike CV" />
-      <section className="blog-page">
+      <BlogPageWrapper>
         <Blogs blogs={blogs} title="Alla artiklar" />
-      </section>
+      </BlogPageWrapper>
     </Layout>
   )
 }

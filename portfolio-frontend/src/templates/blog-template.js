@@ -3,6 +3,12 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
+import {
+  BlogTempletWrap,
+  BlogTempCenter,
+  CenterButton
+} from "../elements"
+
 
 const ComponentName = ({ data }) => {
   console.log(data)
@@ -11,16 +17,16 @@ const ComponentName = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} description={desc} />
-      <section className="blog-template">
-        <div className="section-center">
+      <BlogTempletWrap>
+        <BlogTempCenter>
           <article className="blog-content">
             <ReactMarkdown source={content} />
           </article>
-          <Link to="/blog" className="btn center-btn">
+          <CenterButton to="/blog">
             Alla artiklar
-          </Link>
-        </div>
-      </section>
+          </CenterButton>
+        </BlogTempCenter>
+      </BlogTempletWrap>
     </Layout>
   )
 }
