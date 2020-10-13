@@ -5,6 +5,8 @@ import { Link } from "gatsby"
 import {
   BlogArticle,
   BlogImage,
+  BlogCard,
+  BlogFooter
 } from "../elements"
 
 const Blog = ({ id, title, image, date, category, slug, desc }) => {
@@ -15,7 +17,7 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
         {image && (
           <BlogImage fluid={image.childImageSharp.fluid} />
         )}
-        <div className="blog-card">
+        <BlogCard>
           {/* if title is not supplied, set a defualt title */}
           <h4>{title || "Ariklar"}</h4>
           <p>{desc}</p>
@@ -23,7 +25,7 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
             <p>{category}</p>
             <p>{date}</p>
           </div>
-        </div>
+        </BlogCard>
       </BlogArticle>
     </Link>
   )
