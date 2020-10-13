@@ -41,6 +41,9 @@ export const JobButton = styled.button`
     padding: 0.25rem 0;
     line-height: 1;
     
+    color: ${props => props.isActive === "true" && "#2caeba" };
+    box-shadow: ${props => props.isActive === "true" && "0 2px #2caeba" };
+    //color: ${props => props.isActive === "true" && " props.theme.color.primary5" };
 
     &:hover {
         color: ${props => props.theme.color.primary5};
@@ -52,15 +55,6 @@ export const JobButton = styled.button`
         &:hover {
             box-shadow: -2px 0 ${props => props.theme.color.primary5};
         }
+        box-shadow: ${props => props.isActive === "true" && "-2px 0 #2caeba" };
     }
 `
-/*
-.active-btn {
-    color: var(--clr-primary-5);
-    box-shadow: 0 2px var(--clr-primary-5);
-  }
-
-@media screen and (min-width: 992px) {
-    box-shadow: -2px 0 var(--clr-primary-5);
-
-*/

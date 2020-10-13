@@ -7,6 +7,7 @@ import {
   JobsWrapper,
   JobsCenter,
   ButtonContainer,
+  JobButton,
 } from "../elements"
 
 const query = graphql`
@@ -50,14 +51,14 @@ const Jobs = () => {
         <ButtonContainer>
           {jobs.map((item, index) => {
             return (
-              <button
+              <JobButton
                 key={item.strapiId}
                 onClick={() => setValue(index)}
-                className={`job-btn ${index === value && "active-btn"}`}
-                isActive={index === value ? "true" : "false"}
+                //className={`job-btn ${index === value && "active-btn"}`}
+                isActive={index === value && "true"}
               >
                 {item.company}
-              </button>
+              </JobButton>
             )
           })}
         </ButtonContainer>
