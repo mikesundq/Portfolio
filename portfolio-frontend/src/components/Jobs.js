@@ -11,7 +11,7 @@ import {
   JobDate,
   JobDesc,
   JobIcon,
-  CVButton,
+  CenterButton
 
 } from "../elements"
 
@@ -82,9 +82,9 @@ const Jobs = () => {
           })}
         </JobInfo>
       </JobsCenter>
-      <CVButton to="/about">
+      <CenterButton to="/about">
         Mitt CV
-      </CVButton>
+      </CenterButton>
     </JobsWrapper>
   )
 }

@@ -83,7 +83,7 @@ export const HeroImage = styled(Image)`
 `
 
 //ContactButton
-export const ContactButton = styled(props => <Link {...props} />)`
+export const ContactButtonNotUsing = styled(props => <Link {...props} />)`
 
 text-transform: uppercase;
 background: ${props => props.theme.color.primary5};

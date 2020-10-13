@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import {
   ProjectsSection,
   ProjectsCenter,
+  CenterButton,
 
 } from "../elements"
 
@@ -18,9 +19,9 @@ const Projects = ({ projects, title, showLink }) => {
         })}
       </ProjectsCenter>
       {showLink && (
-        <Link to="/projects" className="btn center-btn">
+        <CenterButton to="/projects">
           Alla projekt
-        </Link>
+        </CenterButton>
       )}
     </ProjectsSection>
   )
