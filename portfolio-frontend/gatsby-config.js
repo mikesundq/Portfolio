@@ -25,6 +25,17 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `GatsbyJS`,
+    //     short_name: `GatsbyJS`,
+    //     start_url: `/`,
+    //     background_color: `#418d25`,
+    //     theme_color: `#a2466c`,
+    //     display: `standalone`,
+    //   }
+    // },
     {
       resolve: `gatsby-source-strapi`,
       options: {
