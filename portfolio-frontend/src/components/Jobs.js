@@ -8,6 +8,12 @@ import {
   JobsCenter,
   ButtonContainer,
   JobButton,
+  JobInfo,
+  JobDate,
+  JobDesc,
+  JobIcon,
+  CVButton,
+
 } from "../elements"
 
 const query = graphql`
@@ -63,23 +69,23 @@ const Jobs = () => {
           })}
         </ButtonContainer>
         {/* job info */}
-        <article className="job-info">
+        <JobInfo>
           <h3>{position}</h3>
           <h4>{company}</h4>
-          <p className="job-date">{date}</p>
+          <JobDate>{date}</JobDate>
           {desc.map(item => {
             return (
-              <div key={item.id} className="job-desc">
-                <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
+              <JobDesc key={item.id}>
+                <FaAngleDoubleRight style={JobIcon}></FaAngleDoubleRight>
                 <p>{item.name}</p>
-              </div>
+              </JobDesc>
             )
           })}
-        </article>
+        </JobInfo>
       </JobsCenter>
-      <Link to="/about" className="btn center-btn">
+      <CVButton to="/about">
         Mitt CV
-      </Link>
+      </CVButton>
     </JobsWrapper>
   )
 }
