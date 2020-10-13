@@ -1,6 +1,5 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
-import React from "react"
+
 
 export const JobsWrapper = styled.section`
     padding: 5rem 0;
@@ -45,7 +44,7 @@ export const JobButton = styled.button`
     
     color: ${props => props.isActive === "true" && "#2caeba" };
     box-shadow: ${props => props.isActive === "true" && "0 2px #2caeba" };
-    //tried to use theme props but cant get it work...
+    //tried to use theme props but cant get it to work...
     //color: ${props => props.isActive === "true" && " props.theme.color.primary5" };
 
     &:hover,
@@ -96,6 +95,6 @@ export const JobDesc = styled.div`
 
 //exporting styles to FaAngleDoubleRight from here..
 export const JobIcon = {
-    //color: "#2caeba",
-    color: '${props => props.theme.color.primary5}'
+    color: "#2caeba",
+    //color: '${props => props.theme.color.primary5}'
 };

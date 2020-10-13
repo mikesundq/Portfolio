@@ -50,6 +50,7 @@ Variables
 }
 
 
+
 /*
 =============== 
 Global Styles
@@ -127,8 +128,8 @@ p {
     line-height: 1;
   }
 }
-
 */
+
 /*  global classes */
 
 .btn {
@@ -191,7 +192,10 @@ p {
 }
 /* page links */
 
+
 /* social links */
+
+/*
 .social-links {
   margin-top: 2rem;
   width: 15rem;
@@ -206,11 +210,14 @@ p {
 .social-link:hover {
   color: var(--clr-primary-5);
 }
+*/
+
 /*
 =============== 
 Navbar
 ===============
 */
+
 /*
 .navbar {
   position: absolute;
@@ -287,6 +294,7 @@ Navbar
 }
 
 */
+
 /*
 
 =============== 
@@ -352,6 +360,8 @@ Sidebar
   }
 }
 */
+
+
 /*
 =============== 
 Sidebar Animation
@@ -420,12 +430,16 @@ Sidebar Animation
   }
 }
 */
+
+
+
 /*
 =============== 
 Hero
 ===============
 */
 /* underline added to globals */
+
 /*
 .hero {
   margin-top: -5rem;
@@ -502,6 +516,8 @@ Hero
   }
 }
 */
+
+
 /*
 =============== 
 Services
@@ -562,6 +578,8 @@ Jobs
 ===============
 */
 
+/*
+
 .jobs-center {
   width: 80vw;
   margin: 0 auto;
@@ -593,9 +611,7 @@ Jobs
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
 }
-.job-info {
-  /* min-height: 420px; */
-}
+
 .job-info h3 {
   font-weight: 400;
 }
@@ -645,6 +661,8 @@ Jobs
     box-shadow: -2px 0 var(--clr-primary-5);
   }
 }
+
+*/
 
 /*
 =============== 

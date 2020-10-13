@@ -19,3 +19,12 @@ export const BlogsCenter = styled.div`
         column-gap: 2rem;
     }
 `
+
+export const BlogArticle = styled.article`
+    display: block;
+    margin-bottom: 2rem;
+    background: ${props => props.theme.color.grey10};
+    border-radius: ${props => props.theme.radius};
+    box-shadow: ${props => props.theme.shadow.light};
+    transition: ${props => props.theme.transition};
+`
