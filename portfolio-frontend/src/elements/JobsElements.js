@@ -93,8 +93,11 @@ export const JobDesc = styled.div`
         color: ${props => props.theme.color.grey3};
     }
 `
+
+//exporting styles to FaAngleDoubleRight from here..
 export const JobIcon = {
-    color: "#2caeba"
+    //color: "#2caeba",
+    color: '${props => props.theme.color.primary5}'
 };
 
 export const CVButton = styled(props => <Link {...props} />)`
