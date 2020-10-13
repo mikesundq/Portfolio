@@ -4,6 +4,7 @@ import Project from "./Project"
 import { Link } from "gatsby"
 import {
   ProjectsSection,
+  ProjectsCenter,
 
 } from "../elements"
 
@@ -11,11 +12,11 @@ const Projects = ({ projects, title, showLink }) => {
   return (
     <ProjectsSection>
       <Title title={title} />
-      <div className="section-center projects-center">
+      <ProjectsCenter>
         {projects.map((project, index) => {
           return <Project key={project.id} index={index} {...project} />
         })}
-      </div>
+      </ProjectsCenter>
       {showLink && (
         <Link to="/projects" className="btn center-btn">
           Alla projekt
