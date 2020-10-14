@@ -23,12 +23,12 @@ export const ProjectWrap = styled.article`
         opacity: 0;
     }
 
-    &:nth-of-type(even) img {
+    &:nth-of-type(even) div {
         grid-column: 5 / -1;
         grid-row: 1 / 1;
     }
 
-    :nth-of-type(even) .project-info {
+    &:nth-of-type(odd) div {
         grid-column: 2 / span 7;
         grid-row: 1 / 1;
         text-align: left;

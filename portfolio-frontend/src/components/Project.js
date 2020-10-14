@@ -31,7 +31,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
             return <span key={item.id}>{item.title}</span>
           })}
         </ProjectStack>
-        <div className="project-links">
+        <div>
           <a href={github}>
             <GithubIcon/>
           </a>
