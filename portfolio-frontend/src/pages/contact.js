@@ -3,6 +3,11 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import { 
     ContactPageWrapper,
+    ContactFormWrap,
+    ContactFormGroup,
+    ContactInput,
+    ContactInputText,
+
 } from "../elements"
 
 const contact = () => {
@@ -10,10 +15,10 @@ const contact = () => {
 <Layout>
 <SEO title="CV" description="Mike CV" />
             <ContactPageWrapper>
-                <article className="contact-form">
+                <ContactFormWrap>
                     <h3>get in touch</h3>
                     <form action="https://formspree.io/f/xknpoqbz" method="POST">
-                        <div className="form-group">
+                        <ContactFormGroup>
                             <input
                                 type="text"
                                 name="name"
@@ -32,12 +37,12 @@ const contact = () => {
                                 placeholder="message"
                                 className="form-control"
                             ></textarea>
-                        </div>
+                        </ContactFormGroup>
                         <button type="submit" className="submit-btn btn">
                             submit here
             </button>
                     </form>
-                </article>
+                </ContactFormWrap>
             </ContactPageWrapper>
         </Layout>
     )
