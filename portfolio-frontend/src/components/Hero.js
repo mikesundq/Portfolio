@@ -3,7 +3,7 @@ import React from "react"
 //import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
-//import elements
+
 import {
   HeroWrapper,
   HeroUnderline,

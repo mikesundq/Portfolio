@@ -4,6 +4,8 @@ import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import { 
   ProjectWrap,
+  ProjectImage,
+  ProjectIcon,
 } from "../elements"
 
 
@@ -26,10 +28,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         </div>
         <div className="project-links">
           <a href={github}>
-            <FaGithubSquare className="project-icon" />
+            <FaGithubSquare className="project-icon"/>
           </a>
           <a href={url}>
-            <FaShareSquare className="project-icon" />
+            <FaShareSquare className="project-icon"/>
           </a>
         </div>
       </div>

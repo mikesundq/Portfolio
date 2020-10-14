@@ -53,7 +53,18 @@ export const ProjectWrap = styled.article`
 
 `
 
-
+/*
+export const ProjectIcon = {
+    color: "#2caeba",
+    fontsize: "1.25rem",
+    marginright: "0.5rem",
+    transition: "all 0.3s linear"
+    :hover {
+        color: var(--clr-primary-1);
+    }
+    //color: '${props => props.theme.color.primary5}'
+};
+*/
 
 // &:hover{
 //     opacity: 0;
