@@ -51,13 +51,3 @@ export default ({ sidebar }) => {
   )
 }
 
-
-/*
-export default ({ styleClass }) => {
-  return (
-    <ul className={`page-links ${styleClass ? styleClass : ""}`}>
-      {tempLinks}
-    </ul>
-  )
-}
-*/
