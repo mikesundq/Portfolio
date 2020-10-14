@@ -4,12 +4,13 @@ export const AboutCenter = styled.div`
     width: 90vw;
     margin: 0 auto;
     max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    column-gap: 4rem;
+   
 
     @media screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        column-gap: 4rem;
         width: 95vw;
     }
 `

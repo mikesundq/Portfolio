@@ -13,6 +13,7 @@ import {
     AboutStack,
     AboutImage,
     CVButton,
+    Button,
 
 } from "../elements"
 
@@ -46,9 +47,9 @@ const About = ({
                             </a>
                             {` `}
                         </CVButton>
-                        <Link to="/contact" className="btn">
+                        <Button to="/contact">
                             kontakta mig
-                        </Link>
+                        </Button>
                     </AboutArticle>
                 </AboutCenter>
                 
