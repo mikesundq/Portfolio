@@ -11,18 +11,6 @@ export const ProjectWrap = styled.article`
         opacity: 0;
     }
     
-    @media screen and (min-width: 992px) {
-        grid-template-columns: repeat(12, 1fr);
-        align-items: center;
-    }
-
-    @media screen and (min-width: 992px) {
-        grid-column: 1 / span 8;
-        grid-row: 1 / 1;
-        height: 30rem;
-        border-radius: var(--radius);
-        box-shadow: var(--dark-shadow);
-    }
 
     @media screen and (min-width: 992px) {
 
