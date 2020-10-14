@@ -8,6 +8,8 @@ import {
   ProjectIcon,
   GithubIcon,
   ShareIcon,
+  ProjectNumber,
+  ProjectStack,
 
 } from "../elements"
 
@@ -20,15 +22,15 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         <Image fluid={image.childImageSharp.fluid} className="project-img" />
       )}
       <div className="project-info">
-        <span className="project-number">0{index + 1}.</span>
+        <ProjectNumber>0{index + 1}.</ProjectNumber>
         {/* if title is not supplied, set a defualt title */}
         <h3>{title || "Projekt"}</h3>
         <p>{description}</p>
-        <div className="project-stack">
+        <ProjectStack>
           {stack.map(item => {
             return <span key={item.id}>{item.title}</span>
           })}
-        </div>
+        </ProjectStack>
         <div className="project-links">
           <a href={github}>
             <GithubIcon/>

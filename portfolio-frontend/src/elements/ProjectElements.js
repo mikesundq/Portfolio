@@ -90,3 +90,26 @@ export const ProjectIcon = {
     // }
     //color: ${props => props.theme.color.primary5}'
 };
+
+export const ProjectNumber = styled.span`
+    display: inline-block;
+    font-size: 1.25rem;
+    color: ${props => props.theme.color.primary5};
+    margin-bottom: 0.75rem;
+`
+
+export const ProjectStack = styled.div`
+    margin-bottom: 1rem;
+
+    span {
+        display: inline-block;
+        background: ${props => props.theme.color.grey9};
+        color: ${props => props.theme.color.grey5};
+        margin-right: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: ${props => props.theme.radius};
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.85rem;
+    }
+`
