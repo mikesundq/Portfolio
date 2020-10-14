@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 
 
 export const ProjectWrap = styled.article`
@@ -53,22 +54,39 @@ export const ProjectWrap = styled.article`
 
 `
 
-/*
+//My styled icons, lock up if there is a better way..
+export const GithubIcon = styled(FaGithubSquare)`
+    color: ${props => props.theme.color.primary5};
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    transition: ${props => props.theme.transition};
+
+    :hover {
+            color: ${props => props.theme.color.primary1};
+        }
+
+`
+export const ShareIcon = styled(FaShareSquare)`
+    color: ${props => props.theme.color.primary5};
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    transition: ${props => props.theme.transition};
+
+    :hover {
+            color: ${props => props.theme.color.primary1};
+        }
+
+`
+
+
+//for testing not in use
 export const ProjectIcon = {
     color: "#2caeba",
     fontsize: "1.25rem",
     marginright: "0.5rem",
     transition: "all 0.3s linear"
-    :hover {
-        color: var(--clr-primary-1);
-    }
-    //color: '${props => props.theme.color.primary5}'
+    // :hover {
+    //     color: var(--clr-primary-1);
+    // }
+    //color: ${props => props.theme.color.primary5}'
 };
-*/
-
-// &:hover{
-//     opacity: 0;
-// }
-// &:nth-of-type(even) {
-
-// }

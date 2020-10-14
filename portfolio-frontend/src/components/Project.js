@@ -6,6 +6,9 @@ import {
   ProjectWrap,
   ProjectImage,
   ProjectIcon,
+  GithubIcon,
+  ShareIcon,
+
 } from "../elements"
 
 
@@ -20,7 +23,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         <span className="project-number">0{index + 1}.</span>
         {/* if title is not supplied, set a defualt title */}
         <h3>{title || "Projekt"}</h3>
-        <p className="project-description">{description}</p>
+        <p>{description}</p>
         <div className="project-stack">
           {stack.map(item => {
             return <span key={item.id}>{item.title}</span>
@@ -28,10 +31,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         </div>
         <div className="project-links">
           <a href={github}>
-            <FaGithubSquare className="project-icon"/>
+            <GithubIcon/>
           </a>
           <a href={url}>
-            <FaShareSquare className="project-icon"/>
+            <ShareIcon/>
           </a>
         </div>
       </div>
