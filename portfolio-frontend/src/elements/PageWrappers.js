@@ -32,3 +32,9 @@ export const ContactPageWrapper = styled.section`
     place-items: center;
     padding: 5rem 0;
 `
+
+export const AboutPageWrapper = styled.section`
+    background: ${props => props.theme.color.grey10};
+    min-height: calc(100vh - 5rem - 9rem);
+    padding: 7rem 0;
+`

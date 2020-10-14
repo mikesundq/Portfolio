@@ -13,7 +13,7 @@ const ProjectsPage = ({
   return (
     <Layout>
       <SEO title="CV" description="Mike CV" />
-      <section className="project-page">
+      <section>
         <Projects projects={projects} title="Alla projekt" />
       </section>
     </Layout>

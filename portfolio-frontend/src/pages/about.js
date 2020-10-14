@@ -7,7 +7,15 @@ import ReactMarkdown from "react-markdown"
 import downloadFile from "../../static/MittCV.pdf"
 import { Link } from "gatsby"
 import SEO from "../components/SEO"
-// ...GatsbyImageSharpFluid
+import {
+    AboutPageWrapper,
+    AboutCenter,
+    AboutArticle,
+    AboutStack,
+    AboutImage,
+    CVButton,
+
+} from "../elements"
 
 const About = ({
     data: {
@@ -19,35 +27,35 @@ const About = ({
     return (
         <Layout>
             <SEO title="CV" description="Mike CV" />
-            <section className="about-page">
-                <div className="section-center about-center">
-                    <Image
+            <AboutPageWrapper>
+                <AboutCenter>
+                    <AboutImage
                         fluid={image.childImageSharp.fluid}
-                        className="about-img"
+                        //className="about-img"
                     />
-                    <article className="about-text">
+                    <AboutArticle>
                         {/* <Title title={title} />
                   <p>{info}</p> */}
                         <ReactMarkdown source={info} />
-                        <div className="about-stack">
+                        <AboutStack>
                             {stack.map(item => {
                                 return <span key={item.id}>{item.title}</span>
                             })}
-                        </div>
+                        </AboutStack>
 
-                        <div className="btn cv">
+                        <CVButton>
                             <a href={downloadFile} download>
                                 Ladda ner fullständig CV
                             </a>
                             {` `}
-                        </div>
+                        </CVButton>
                         <Link to="/contact" className="btn">
                             kontakta mig
                         </Link>
-                    </article>
-                </div>
-                <></>
-            </section>
+                    </AboutArticle>
+                </AboutCenter>
+                
+            </AboutPageWrapper>
         </Layout>
     )
 }

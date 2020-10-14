@@ -30,6 +30,19 @@ export const BlogImage = styled(Image)`
         height: 13.75rem;
     }
 `
+
+//AboutImage
+export const AboutImage = styled(Image)`
+    margin-bottom: 2rem;
+    height: 40rem;
+
+    @media screen and (min-width: 992px) {
+        grid-column: 1 / span 5;
+        margin-bottom: 0;
+    }
+`
+
+
 //ProjectImage
 export const ProjectImage = styled(Image)`
     
