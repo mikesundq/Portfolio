@@ -1,11 +1,15 @@
 import styled from "styled-components"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
-import { ProjectImage } from "./ImageElements"
+
 
 
 export const ProjectWrap = styled.article`
     display: grid;
     margin-bottom: 4rem;
+
+    &:hover div::after {
+        opacity: 0;
+    }
     
     @media screen and (min-width: 992px) {
         grid-template-columns: repeat(12, 1fr);
@@ -20,32 +24,17 @@ export const ProjectWrap = styled.article`
         box-shadow: var(--dark-shadow);
     }
 
-    &:hover div::after {
-        opacity: 0;
-    }
-
-    &:nth-of-type(even) div {
-        grid-column: 5 / -1;
-        grid-row: 1 / 1;
-    }
-
-    &:nth-of-type(odd) div {
-        grid-column: 2 / span 7;
-        grid-row: 1 / 1;
-        text-align: left;
-    }
-
     @media screen and (min-width: 992px) {
 
         grid-template-columns: repeat(12, 1fr);
         align-items: center;
 
-        :nth-of-type(even) img {
+        &:nth-of-type(even) div {
             grid-column: 5 / -1;
             grid-row: 1 / 1;
         }
 
-        :nth-of-type(even) .div {
+        &:nth-of-type(odd) div {
             grid-column: 2 / span 7;
             grid-row: 1 / 1;
             text-align: left;
@@ -122,6 +111,9 @@ export const ProjectInfo = styled.div`
     padding: 1rem 2rem;
     border-bottom-left-radius: ${props => props.theme.radius};
     border-bottom-right-radius: ${props => props.theme.radius};
+    z-index: 1;
+    grid-column: 5 /12;
+    grid-row: 1 / 1;
 
     h3 {
         font-weight: 500;
