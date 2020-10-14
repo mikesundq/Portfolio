@@ -14,12 +14,12 @@ import {
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
-    <article className="project">
+    <ProjectWrap>
       {/* if image is not supplied, instead of breaking, dont show any image */}
       {image && (
-        <Image fluid={image.childImageSharp.fluid} className="project-img" />
+        <ProjectImage fluid={image.childImageSharp.fluid}/>
       )}
-      <div className="project-info">
+      <ProjectInfo>
         <ProjectNumber>0{index + 1}.</ProjectNumber>
         {/* if title is not supplied, set a defualt title */}
         <h3>{title || "Projekt"}</h3>
@@ -37,8 +37,8 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
             <ShareIcon/>
           </a>
         </div>
-      </div>
-    </article>
+      </ProjectInfo>
+    </ProjectWrap>
   )
 }
 

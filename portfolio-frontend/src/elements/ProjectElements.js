@@ -12,6 +12,7 @@ export const ProjectWrap = styled.article`
     }
     
 
+
     @media screen and (min-width: 992px) {
 
         grid-template-columns: repeat(12, 1fr);
@@ -71,6 +72,8 @@ export const ProjectIcon = {
 //testing not in use
 
 
+
+
 export const ProjectNumber = styled.span`
     display: inline-block;
     font-size: 1.25rem;
@@ -99,9 +102,7 @@ export const ProjectInfo = styled.section`
     padding: 1rem 2rem;
     border-bottom-left-radius: ${props => props.theme.radius};
     border-bottom-right-radius: ${props => props.theme.radius};
-    z-index: 1;
-    grid-column: 5 /12;
-    grid-row: 1 / 1;
+   
 
     h3 {
         font-weight: 500;
@@ -112,5 +113,8 @@ export const ProjectInfo = styled.section`
     @media screen and (min-width: 992px) {
         border-radius: ${props => props.theme.radius};
         box-shadow: ${props => props.theme.shadows.dark};
+        z-index: 1;
+        grid-column: 5 /12;
+        grid-row: 1 / 1;
     }
 `
