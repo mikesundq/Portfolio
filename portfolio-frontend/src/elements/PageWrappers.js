@@ -1,5 +1,9 @@
 import styled from "styled-components"
 
+
+//  All wrappers for the pages //
+// BLOG, 404, CONTACT, ABOUT 
+
 export const BlogPageWrapper = styled.section`
     background: ${props => props.theme.color.grey10};
     min-height: calc(100vh - 5rem - 9rem);

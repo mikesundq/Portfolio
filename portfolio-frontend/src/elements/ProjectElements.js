@@ -18,16 +18,20 @@ export const ProjectWrap = styled.article`
         grid-template-columns: repeat(12, 1fr);
         align-items: center;
 
+        //this will position the even images
         &:nth-of-type(even) div {
             grid-column: 5 / -1;
             grid-row: 1 / 1;
         }
 
+        //this will position the even projectInfos
         &:nth-of-type(even) section {
             grid-column: 2 / span 7;
             grid-row: 1 / 1;
             text-align: left;
         }
+
+        //this was the best solution I could come up with for now...
 
     }
 
@@ -57,23 +61,6 @@ export const ShareIcon = styled(FaShareSquare)`
 
 `
 
-
-//for testing not in use
-export const ProjectIcon = {
-    color: "#2caeba",
-    fontsize: "1.25rem",
-    marginright: "0.5rem",
-    transition: "all 0.3s linear"
-    // :hover {
-    //     color: var(--clr-primary-1);
-    // }
-    //color: ${props => props.theme.color.primary5}'
-};
-//testing not in use
-
-
-
-
 export const ProjectNumber = styled.span`
     display: inline-block;
     font-size: 1.25rem;
@@ -102,7 +89,7 @@ export const ProjectInfo = styled.section`
     padding: 1rem 2rem;
     border-bottom-left-radius: ${props => props.theme.radius};
     border-bottom-right-radius: ${props => props.theme.radius};
-   
+
 
     h3 {
         font-weight: 500;

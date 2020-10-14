@@ -21,17 +21,6 @@ export const AboutArticle = styled.article`
         line-height: 2;
     }
 `
-/*
-.about-text .section-title {
-    margin-bottom: 2rem;
-    text-align: left;
-  }
-
-  .about-text .underline {
-    margin-left: 0;
-    margin-right: 0;
-  }
-*/
 
 export const AboutStack = styled.div`
     span {

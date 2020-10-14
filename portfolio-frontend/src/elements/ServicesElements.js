@@ -40,6 +40,14 @@ export const Service = styled.article`
         transition: ${props => props.theme.transition};
     }
 
+    //this is for underline in title
+    div {
+        width: 3rem;
+        height: 0.12rem;
+        -webkit-transition: ${props => props.theme.transition};
+        transition: ${props => props.theme.transition};
+    }
+
     &:hover{
         background: ${props => props.theme.color.primary5};
         color: ${props => props.theme.color.primary9};
@@ -48,8 +56,10 @@ export const Service = styled.article`
             color: ${props => props.theme.color.primary9};
         }
 
-        .underline {
+        //this is for underline in title
+        div {
             background: ${props => props.theme.color.primary9};
+
         }
     }
 `

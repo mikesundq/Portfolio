@@ -1,6 +1,8 @@
 import styled, { keyframes, css } from "styled-components"
 
 
+
+//For the animation 
 const fadeIn = keyframes`
     0% {
             transform: translateX(-200px);
@@ -43,6 +45,7 @@ export const SidebarLinks = styled.ul`
         ${slideRight};
     }
     
+    //animated list items
 
     li:nth-of-type(1) {
         animation-delay: 0.25s;
@@ -72,15 +75,13 @@ export const SidebarWrap = styled.aside`
     display: grid;
     place-items: center;
     opacity: ${({ isOpen }) => isOpen ? "1" : "0"};
-    //opacity: 0;
     transition:  ${props => props.theme.transition};
     transform: ${({ isOpen }) => isOpen ? "translateX(0)" : "translateX(-100%)"};
-    //transform: translateX(0);
-    //transform: translateX(-100%);
-
+ 
     @media screen and (min-width: 992px) {
         transform: translateX(-100%);
     }
+
 
     button {
         position: absolute;

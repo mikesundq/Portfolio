@@ -1,8 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Title from "../components/Title"
-import Image from "gatsby-image"
+//import Title from "../components/Title"
 import ReactMarkdown from "react-markdown"
 import downloadFile from "../../static/MittCV.pdf"
 import { Link } from "gatsby"
@@ -22,8 +21,8 @@ const About = ({
         about: { nodes },
     },
 }) => {
-    //console.log(nodes)
-    const { info, stack, title, image } = nodes[0]
+
+    const { info, stack, image } = nodes[0]
     return (
         <Layout>
             <SEO title="CV" description="Mike CV" />
@@ -34,8 +33,6 @@ const About = ({
                         //className="about-img"
                     />
                     <AboutArticle>
-                        {/* <Title title={title} />
-                  <p>{info}</p> */}
                         <ReactMarkdown source={info} />
                         <AboutStack>
                             {stack.map(item => {

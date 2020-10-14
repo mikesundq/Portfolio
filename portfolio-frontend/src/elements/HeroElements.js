@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-//heroWrapper
+//HeroWrapper
 export const HeroWrapper = styled.header`
   margin-top: -5rem;
   padding-top: 5rem;

@@ -1,12 +1,13 @@
 import React from "react"
+import { TitleWrap } from "../elements"
 
 const Title = ({title}) => {
   
   return (
-  <div className="section-title">
+  <TitleWrap>
       <h2>{title || "Title"}</h2>
-    <div className="underline"></div>
-  </div>
+    <div></div>
+  </TitleWrap>
   )
 }
 

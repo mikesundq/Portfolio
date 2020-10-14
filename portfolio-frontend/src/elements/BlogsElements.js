@@ -55,6 +55,7 @@ export const BlogFooter = styled.div`
         color: ${props => props.theme.color.grey5};
     }
 
+    //for the category in blog
     p:first-of-type {
         display: inline-block;
         background: ${props => props.theme.color.grey9};

@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "gatsby-image"
 import { 
   ProjectWrap,
   ProjectImage,

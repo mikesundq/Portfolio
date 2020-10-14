@@ -44,7 +44,7 @@ export const JobButton = styled.button`
     
     color: ${props => props.isActive === "true" && "#2caeba" };
     box-shadow: ${props => props.isActive === "true" && "0 2px #2caeba" };
-    //tried to use theme props but cant get it to work...
+    //tried to use theme props but cant get it to work look at this later!
     //color: ${props => props.isActive === "true" && " props.theme.color.primary5" };
 
     &:hover,
@@ -58,6 +58,8 @@ export const JobButton = styled.button`
         &:hover {
             box-shadow: -2px 0 ${props => props.theme.color.primary5};
         }
+
+        //tried to use props but this will do for now..
         box-shadow: ${props => props.isActive === "true" && "-2px 0 #2caeba" };
     }
 `

@@ -2,6 +2,9 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import React from "react"
 
+//make one Link button and send in props if i get time...
+
+
 //CenterButton
 export const CenterButton = styled(props => <Link {...props} />)`
     

@@ -23,6 +23,8 @@ export const ContactFormGroup = styled.div`
     padding: 1rem 1.5rem;
 `
 
+
+//for name and email input
 export const ContactInput = styled.input`
     display: block;
     width: 100%;
@@ -41,6 +43,8 @@ export const ContactInput = styled.input`
         letter-spacing: ${props => props.theme.spacing};
     }
 `
+
+//for the message area
 export const ContactInputText = styled.textarea`
     display: block;
     width: 100%;
