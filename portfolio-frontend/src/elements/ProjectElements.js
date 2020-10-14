@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
+import { ProjectImage } from "./ImageElements"
 
 
 export const ProjectWrap = styled.article`
@@ -19,7 +20,7 @@ export const ProjectWrap = styled.article`
         box-shadow: var(--dark-shadow);
     }
 
-    &:hover img::after {
+    &:hover div::after {
         opacity: 0;
     }
 
@@ -44,7 +45,7 @@ export const ProjectWrap = styled.article`
             grid-row: 1 / 1;
         }
 
-        :nth-of-type(even) .project-info {
+        :nth-of-type(even) .div {
             grid-column: 2 / span 7;
             grid-row: 1 / 1;
             text-align: left;
