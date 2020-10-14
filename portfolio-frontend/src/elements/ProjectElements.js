@@ -91,6 +91,8 @@ export const ProjectIcon = {
     // }
     //color: ${props => props.theme.color.primary5}'
 };
+//testing not in use
+
 
 export const ProjectNumber = styled.span`
     display: inline-block;
@@ -112,5 +114,23 @@ export const ProjectStack = styled.div`
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 0.85rem;
+    }
+`
+
+export const ProjectInfo = styled.div`
+    background: ${props => props.theme.color.white};
+    padding: 1rem 2rem;
+    border-bottom-left-radius: ${props => props.theme.radius};
+    border-bottom-right-radius: ${props => props.theme.radius};
+
+    h3 {
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        border-radius: ${props => props.theme.radius};
+        box-shadow: ${props => props.theme.shadows.dark};
     }
 `

@@ -5,6 +5,7 @@ import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import { 
   ProjectWrap,
   ProjectImage,
+  ProjectInfo,
   ProjectIcon,
   GithubIcon,
   ShareIcon,
