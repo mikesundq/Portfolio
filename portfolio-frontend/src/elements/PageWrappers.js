@@ -24,3 +24,11 @@ export const ErrorPageWrapper = styled.main`
         margin-bottom: 2rem;
     }
 `
+export const ContactPageWrapper = styled.section`
+    background: ${props => props.theme.color.grey10};
+    min-height: calc(100vh - 5rem - 9rem);
+
+    display: grid;
+    place-items: center;
+    padding: 5rem 0;
+`

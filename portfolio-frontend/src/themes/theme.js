@@ -49,8 +49,4 @@ export default {
         fixed: "700px"
     },
 
-    // linksStyle: {
-    //     footer: "",
-    //     sidebar: ""
-    // }
 }

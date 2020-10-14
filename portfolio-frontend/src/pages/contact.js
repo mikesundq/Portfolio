@@ -1,12 +1,15 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import { 
+    ContactPageWrapper,
+} from "../elements"
 
 const contact = () => {
-  return (
+    return (
 <Layout>
 <SEO title="CV" description="Mike CV" />
-            <section className="contact-page">
+            <ContactPageWrapper>
                 <article className="contact-form">
                     <h3>get in touch</h3>
                     <form action="https://formspree.io/f/xknpoqbz" method="POST">
@@ -35,8 +38,8 @@ const contact = () => {
             </button>
                     </form>
                 </article>
-            </section>
+            </ContactPageWrapper>
         </Layout>
-  )
+    )
 }
 export default contact
