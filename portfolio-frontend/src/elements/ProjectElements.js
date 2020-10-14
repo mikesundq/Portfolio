@@ -34,7 +34,7 @@ export const ProjectWrap = styled.article`
             grid-row: 1 / 1;
         }
 
-        &:nth-of-type(odd) div {
+        &:nth-of-type(even) section {
             grid-column: 2 / span 7;
             grid-row: 1 / 1;
             text-align: left;
@@ -106,7 +106,7 @@ export const ProjectStack = styled.div`
     }
 `
 
-export const ProjectInfo = styled.div`
+export const ProjectInfo = styled.section`
     background: ${props => props.theme.color.white};
     padding: 1rem 2rem;
     border-bottom-left-radius: ${props => props.theme.radius};
