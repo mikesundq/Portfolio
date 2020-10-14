@@ -2,19 +2,23 @@ import React from "react"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
 import SEO from "../components/SEO"
+import {
+  ErrorPageWrapper,
+  Button,
+} from "../elements"
 
 const Error = () => {
   return (
     <Layout>
       <SEO title="CV" description="Mike CV" />
-      <main className="error-page">
+      <ErrorPageWrapper>
         <div className="error-container">
           <h1>Oj, Något gick fel</h1>
-          <Link to="/" className="btn">
+          <Button to="/">
             Tillbaka Hem
-          </Link>
+          </Button>
         </div>
-      </main>
+      </ErrorPageWrapper>
     </Layout>
   )
 }

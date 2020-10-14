@@ -10,7 +10,7 @@ import {
   HeroCenter,
   HeroInfo,
   HeroImage,
-  ContactButton,
+  Button
 } from "../elements"
 
 
@@ -55,9 +55,9 @@ const Hero = () => {
             <br />
             -Kontakta mig genom denna länk 
             <br />
-            <ContactButton to="/contact">
+            <Button to="/contact">
               kontakta mig
-            </ContactButton>
+            </Button>
             <SocialLinks linksStyle="hero"/>
           </div>
         </HeroInfo>
