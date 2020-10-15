@@ -45,7 +45,6 @@ const About = ({
                             <a href={downloadFile} download>
                                 Ladda ner fullständig CV
                             </a>
-                            {` `}
                         </CVButton>
                         <Button to="/contact">
                             kontakta mig

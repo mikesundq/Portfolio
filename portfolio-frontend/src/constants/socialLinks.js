@@ -5,40 +5,42 @@ import {
   FaDribbbleSquare,
   FaBehanceSquare,
   FaTwitterSquare,
+  FaStackOverflow,
+  FaGithubSquare,
 } from "react-icons/fa"
 import { SocialLinksWrap } from "../elements"
 
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaStackOverflow></FaStackOverflow>,
+    url: "https://stackoverflow.com/users/14450218/",
   },
   {
     id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    icon: <FaLinkedin></FaLinkedin>,
+    url: "https://www.linkedin.com/in/mike-sundqvist/",
   },
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaGithubSquare></FaGithubSquare>,
+    url: "https://github.com/mikesundq",
   },
   {
     id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
+    icon: <FaBehanceSquare></FaBehanceSquare>,
     url: "https://www.twitter.com",
   },
   {
     id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaTwitterSquare></FaTwitterSquare>,
+    url: "https://twitter.com/MikeSundqvist",
   },
 ]
 const links = data.map(link => {
   return (
     <li key={link.id}>
-      <a href={link.url} className="social-link">
+      <a href={link.url}>
         {link.icon}
       </a>
     </li>
