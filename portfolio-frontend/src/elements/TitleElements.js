@@ -10,7 +10,7 @@ export const TitleWrap = styled.div`
         width: 5rem;
         height: 0.25rem;
         margin-bottom: 1.25rem;
-        background: var(--clr-primary-5);
+        background: ${props => props.theme.color.primary5};
         margin-left: auto;
         margin-right: auto;
     }

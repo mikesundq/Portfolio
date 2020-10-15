@@ -56,10 +56,22 @@ export const Service = styled.article`
             color: ${props => props.theme.color.primary9};
         }
 
-        //this is for underline in title
+        //this is for underline
         div {
             background: ${props => props.theme.color.primary9};
 
         }
     }
+`
+
+
+export const ServiceUnderline = styled.div`
+    width: 3rem;
+    height: 0.12rem;
+    margin-bottom: 1.25rem;
+    background: ${props => props.theme.color.primary5};
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: ${props => props.theme.transition};
+    transition: ${props => props.theme.transition};
 `

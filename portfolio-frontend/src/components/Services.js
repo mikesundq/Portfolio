@@ -5,6 +5,7 @@ import {
   ServicesSection,
   ServicesCenter,
   Service,
+  ServiceUnderline
 } from "../elements"
 
 const Services = () => {
@@ -21,7 +22,7 @@ const Services = () => {
             <Service key={id}>
               {icon}
               <h4>{title}</h4>
-              <div className="underline"></div>
+              <ServiceUnderline></ServiceUnderline>
               <p>{text}</p>
             </Service>
           )

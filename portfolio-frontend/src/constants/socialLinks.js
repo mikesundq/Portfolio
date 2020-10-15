@@ -27,11 +27,6 @@ const data = [
     url: "https://github.com/mikesundq",
   },
   {
-    id: 4,
-    icon: <FaBehanceSquare></FaBehanceSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
     id: 5,
     icon: <FaTwitterSquare></FaTwitterSquare>,
     url: "https://twitter.com/MikeSundqvist",
