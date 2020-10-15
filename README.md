@@ -1,5 +1,5 @@
 # Mikael Sundqvist Portfolio, Publiceringsverktyg (CMS)
-<a href="https://mike-sundqvist-portfolio.netlify.app/" target="_blank"  rel="noreferrer">My Portfolio</a>
+<a href="https://mike-sundqvist-portfolio.netlify.app/">My Portfolio</a>
 
 ## Setup Notes
 
