@@ -1,4 +1,4 @@
-# Portfolio
+# Mikael Sundqvist Portfolio för kursen publiceringsverktyg (CMS)
 
 ## Setup Notes
 
