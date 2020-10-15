@@ -29,10 +29,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           })}
         </ProjectStack>
         <div>
-          <a href={github}>
+          <a href={github} target="_blank"  rel="noreferrer">
             <GithubIcon/>
           </a>
-          <a href={url}>
+          <a href={url} target="_blank"  rel="noreferrer">
             <ShareIcon/>
           </a>
         </div>

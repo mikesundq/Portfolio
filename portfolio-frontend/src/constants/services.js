@@ -1,22 +1,23 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaGamepad, FaHtml5 } from "react-icons/fa"
+import { SiCsharp } from "react-icons/si"
 export default [
   {
     id: 1,
-    icon: <FaCode className="service-icon" />,
-    title: "Gatsby Blog",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaHtml5/>,
+    title: "Hemsidor",
+    text: `Fixar dynamiska och funktionella hemsidor. Har erfarenhet av css, styled components, react med mera.`,
   },
   {
     id: 2,
-    icon: <FaSketch className="service-icon" />,
+    icon: <SiCsharp/>,
     title: "ASP. projekt",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `Jobbat med entity frameworks och MVC. C# är ett språk som tilltalar mig och trivs mycket bra att arbeta i.`,
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "Game spel",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade blala.`,
+    icon: <FaGamepad/>,
+    title: "Games",
+    text: `Har snokat lite på Unity och vem vill inte vara med o skapa spel? :)`,
   },
 ]

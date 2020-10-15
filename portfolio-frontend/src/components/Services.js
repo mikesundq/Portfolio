@@ -11,7 +11,7 @@ import {
 const Services = () => {
   return (
     <ServicesSection>
-      <Title title="Tjänster" />
+      <Title title="Antaganden" />
         <ServicesCenter>
         {services.map(service => {
           //  destructure
