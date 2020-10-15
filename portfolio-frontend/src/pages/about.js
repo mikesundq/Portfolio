@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 //import Title from "../components/Title"
 import ReactMarkdown from "react-markdown"
 import downloadFile from "../../static/MittCV.pdf"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import SEO from "../components/SEO"
 import {
     AboutPageWrapper,
