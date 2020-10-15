@@ -12,8 +12,7 @@ const Services = () => {
   return (
     <ServicesSection>
       <Title title="Tjänster" />
-      {/* <div className="section-center services-center"> */}
-      <ServicesCenter>
+        <ServicesCenter>
         {services.map(service => {
           //  destructure
           const { id, icon, title, text } = service
@@ -27,8 +26,7 @@ const Services = () => {
             </Service>
           )
         })}
-      {/* </div> */}
-       </ServicesCenter>
+      </ServicesCenter>
     </ServicesSection>
   )
 }
