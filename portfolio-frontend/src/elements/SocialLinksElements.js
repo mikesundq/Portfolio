@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 
 //look in to this if set animations to paths on sidebar!!
+//Tried something else on socialLinks than Links...
 
 export const SocialLinksWrap = styled.ul`
     
